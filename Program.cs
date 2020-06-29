@@ -27,7 +27,7 @@ namespace GeneratorCutHtml
             foreach (var oneDiv in platDivs)
             {
                 var check = oneDiv.InnerHtml;
-                //var check = "<td style=\"border - width: 0; height: 18mm; padding: 0; \" colspan=\"5\">< strong > Госпошлина по делам, рассматриваемым в судах общей юрисдикции, мировыми судьями Договор № k6oa98 от 19.05.2017 </ strong >< br />< br /></ td > <td style=\"border - width: 0; height: 18mm; padding: 0; \" colspan=\"5\">< strong > Госпошлина по делам, рассматриваемым в судах общей юрисдикции, мировыми судьями Договор № k6oa98 от 19.05.2017 </ strong >< br />< br /></ td > ";
+                //var check = "<td style=\"border - width: 0; height: 18mm; padding: 0; \" colspan=\"5\">< strong > Госпошлина по делам, рассматриваемым в судах общей юрисдикции, мировыми судьями Договор № k7ло98 от 19.08.2017 </ strong >< br />< br /></ td > <td style=\"border - width: 0; height: 18mm; padding: 0; \" colspan=\"5\">< strong > Госпошлина по делам, рассматриваемым в судах общей юрисдикции, мировыми судьями Договор № k6oa98 от 19.05.2017 </ strong >< br />< br /></ td > ";
                 var dogovor = Regex.Match(check, @"Договор\s+№\s+\w*\s");
                 var numDogovor = (dogovor.Value.Replace("Договор №", "")).Replace(" ", string.Empty);
                 htmlBody.AppendChild(oneDiv);
